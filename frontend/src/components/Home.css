@@ -1,0 +1,85 @@
+/* Basic reset and body styling
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  .home-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+    color: #343a40;
+  }
+  
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .action-button {
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .action-button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 600px) {
+    .home-container {
+      padding: 20px;
+    }
+  
+    .action-button {
+      padding: 12px 20px;
+      font-size: 16px;
+    }
+  }
+   */
+   /* Home.css */
+
+body[data-bs-theme="dark"] .card {
+  background-color: #2b2b2b; /* Dark background for the card */
+  color: #ffffff;            /* Light text for readability */
+}
+
+body[data-bs-theme="light"] .card {
+  background-color: #f8f9fa; /* Default light background for the card */
+  color: #000000;            /* Dark text for readability */
+}
+
+.card {
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+body[data-bs-theme="dark"] {
+  background-color: #1a1a1a; /* Dark page background */
+}
+
+body[data-bs-theme="light"] {
+  background-color: #ffffff; /* Light page background */
+}

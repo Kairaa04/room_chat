@@ -1,0 +1,45 @@
+.custom-width {
+  width: 100%; /* Take full width */
+  max-width: 1200px; /* Set a larger max-width for bigger screens */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+/* Home.css */
+body {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text color */
+  /* transition: background-color 0.3s ease, color 0.3s ease; Smooth transitions */
+}
+
+.card {
+  border-radius: 8px;
+  /* transition: background-color 0.3s ease, color 0.3s ease; Smooth transitions for cards */
+}
+
+input::placeholder {
+  color: #aaaaaa; /* Lighter color for placeholders */
+}
+
+input:focus {
+  box-shadow: none;
+  border-color: #0d6efd; /* Bootstrap primary color */
+}
+
+/* Light Theme Styles */
+[data-bs-theme="light"] {
+  background-color: #ffffff; /* Light background */
+  color: #000000; /* Dark text color */
+}
+
+[data-bs-theme="light"] .card {
+  background-color: #f8f9fa; /* Light card background */
+  color: #000000; /* Dark text color */
+}
+
+[data-bs-theme="light"] input::placeholder {
+  color: #6c757d; /* Darker placeholder color for light theme */
+}
+
+[data-bs-theme="light"] input:focus {
+  border-color: #0d6efd; /* Keep Bootstrap primary color */
+}

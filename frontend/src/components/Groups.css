@@ -1,0 +1,81 @@
+/* General Container Styling */
+.groups-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Heading Styling */
+.groups-container h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* List of Groups */
+.groups-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.groups-container ul li {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect for List Items */
+.groups-container ul li:hover {
+  background-color: #007bff;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Style the Room Name */
+.groups-container ul li strong {
+  font-weight: bold;
+}
+
+/* Style for a subtle arrow (or icon) on the right for interaction */
+.groups-container ul li::after {
+  content: '➡️';
+  font-size: 16px;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+/* On hover, rotate the arrow */
+.groups-container ul li:hover::after {
+  transform: translateX(5px);
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+  .groups-container {
+    padding: 15px;
+  }
+
+  .groups-container h2 {
+    font-size: 24px;
+  }
+
+  .groups-container ul li {
+    font-size: 16px;
+  }
+}

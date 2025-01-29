@@ -1,0 +1,97 @@
+/* Create Room Page Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #e9ecef;
+  }
+  
+  .create-room-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffffff, #f0f2f5); /* Subtle gradient background */
+  }
+  
+  .create-room-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Softer, deeper shadow */
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .create-room-container h2 {
+    font-size: 24px;
+    color: #343a40;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .create-room-container input {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 2px solid #ced4da;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .create-room-container input:focus {
+    border-color: #007bff; /* Focus state for input */
+    outline: none;
+  }
+  
+  .create-room-container button {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.2); /* Subtle shadow for button */
+  }
+  
+  .create-room-container button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Button lift effect on hover */
+    box-shadow: 0px 6px 16px rgba(0, 123, 255, 0.3); /* Increase shadow on hover */
+  }
+  
+  .create-room-container button:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+  
+  /* Smooth transitions for better user experience */
+  .create-room-container {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 480px) {
+    .create-room-card {
+      padding: 30px;
+    }
+  
+    .create-room-container h2 {
+      font-size: 20px;
+    }
+  
+    .create-room-container input {
+      padding: 12px;
+    }
+  
+    .create-room-container button {
+      padding: 12px 0;
+      font-size: 16px;
+    }
+  }
+  
